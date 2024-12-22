@@ -1,0 +1,99 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.title {
+  color: #dba600;
+  font-family: Silkscreen sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.reset-btn {
+  background-color: #bf271f;
+  color: #fff;
+  padding: 4px 20px;
+  font-family: Silkscreen sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 4px;
+}
+
+.game {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.game-board {
+  border: 1px solid;
+  width: fit-content;
+  background-color: #dba600;
+  border-radius: 20px;
+  padding: 0px 4px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.cell {
+  border: 1px solid;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+
+.cell.cell-1 {
+  background-color: green !important;
+}
+
+.cell.cell-2 {
+  background-color: red !important;
+}
+
+.player-turn {
+  padding: 12px;
+  text-align: start;
+  color: #51a91b;
+  font-family: Silkscreen;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.winner {
+  position: absolute;
+  background-color: #222222;
+  top: 60%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 10;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.winner-name {
+  color: #fff;
+  font-family: Silkscreen;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
